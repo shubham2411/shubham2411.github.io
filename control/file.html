@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript">
+        function myKeyPress(e){
+
+              e = e || window.event;
+
+              if (e.keyCode == '38') {
+                alert('up');
+              }
+              else if (e.keyCode == '40') {
+                alert('down');
+              }
+              else if (e.keyCode == '37') {
+                alert('left');
+              }
+              else if (e.keyCode == '39') {
+                alert('right');
+              }
+        }
+</script>
+<style>
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-bottom: 20px solid black;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-top: 20px solid black;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+
+	border-left: 20px solid black;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+
+	border-right:20px solid black;
+}
+</style>
+</head>
+<body>
+<div class="arrow-down"></div>
+<div class="arrow-left"></div>
+<div class="arrow-right"></div>
+<div class="arrow-up"></div>
+
+<form>
+    <input type="text" onkeypress="return myKeyPress(event)" />
+</form>
+</body>
+</html>

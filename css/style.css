@@ -1,0 +1,169 @@
+
+ .flip3D4{ width:160px; height:160px; margin:10px; text-align: center; border-radius: 50%;  }
+.flip3D4 > .front{
+	position:absolute;
+    color: #ffffff;
+    left:232.5px; top:327.5px;
+    text-indent: 0px;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+    -moz-transform: perspective( 600px ) rotateY( 0deg );
+    -o-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#0066FF; width:125px; height:125px; border-radius: 50%;\
+
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+
+    border: 2px solid white;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+    transition: -moz-transform .5s linear 0s;
+    transition: -o-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+    -webkit-animation:a4 8s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-direction: alternate;
+
+      -moz-animation:a4 8s;
+      -moz-animation-iteration-count: 1;
+      -moz-animation-direction: alternate;
+
+      -moz-animation:a4 8s;
+      -moz-animation-iteration-count: 1;
+      -moz-animation-direction: alternate;
+      animation: a4 8s;
+}
+.flip3D4 > .back{
+    background: #FFFF00;
+    color: #ffffff;
+	position:absolute;
+    text-indent: 0px;
+    left:232.5px; top:327.5px;
+    border: 4px solid white;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+    -moz-transform: perspective( 600px ) rotateY( 180deg );
+    -o-transform: perspective( 600px ) rotateY( 180deg );
+   	transform: perspective( 600px ) rotateY( 180deg );
+	 width:160px; height:160px; border-radius: 50%;
+
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	transition: -webkit-transform .5s linear 0s;
+    transition: -moz-transform .5s linear 0s;
+    transition: -o-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+    -webkit-animation:a4 8s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-direction: alternate;
+
+      -moz-animation:a4 8s;
+      -moz-animation-iteration-count: 1;
+      -moz-animation-direction: alternate;
+
+      -o-animation:a4 8s;
+      -o-animation-iteration-count: 1;
+      -o-animation-direction: alternate;
+      animation: a4 8s;
+}
+ .line4 {
+    opacity: 1;
+    visibility: hidden;
+    width: 180px;
+    height: 50px;
+    left:344px; top:332px;
+    border-bottom: 3px solid white;
+
+    -webkit-transform:
+            translateY(0px)
+            translateX(16px)
+            rotate(0deg);
+    -moz-transform:
+            translateY(0px)
+            translateX(16px)
+            rotate(0deg);
+     -o-transform:
+            translateY(0px)
+            translateX(16px)
+            rotate(0deg);
+     position: absolute;
+       -webkit-transition-property: opacity; /* Safari */
+    -webkit-transition-duration: .4s; /* Safari */
+
+    -moz-transition-property: opacity; /* Safari */
+    -moz-transition-duration: .4s; /* Safari */
+
+    -o-transition-property: opacity; /* Safari */
+    -o-transition-duration: .4s; /* Safari */
+
+    transition-property: opacity;
+    transition-duration: .4s
+
+    }
+
+@-webkit-keyframes a4 {
+
+    0%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    10%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    20%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    40%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    60%   {background:red; opacity: 0;  left:450px; top:228px;}
+    80%   {background:white; opacity: 1; color:#000; left:300px; top:104.75px;}
+    100%  {background:#0066FF; opacity: 1; left:232.5px; top:327.5px;}
+
+    }
+
+@-moz-keyframes a4 {
+
+    0%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    10%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    20%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    40%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    60%   {background:red; opacity: 0;  left:450px; top:228px;}
+    80%   {background:white; opacity: 1; color:#000; left:300px; top:104.75px;}
+    100%  {background:#0066FF; opacity: 1; left:232.5px; top:327.5px;}
+
+    }
+
+    @-o-keyframes a4 {
+
+    0%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    10%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    20%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    40%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    60%   {background:red; opacity: 0;  left:450px; top:228px;}
+    80%   {background:white; opacity: 1;color:#000;  left:300px; top:104.75px;}
+    100%  {background:#0066FF; opacity: 1; left:232.5px; top:327.5px;}
+
+    }
+
+    @-keyframes a4 {
+
+    0%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    10%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    20%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    40%   {background:red; opacity: 0;  left:-444px; top:-444px;}
+    60%   {background:red; opacity: 0;  left:450px; top:228px;}
+    80%   {background:white; opacity: 1; color:#000; left:300px; top:104.75px;}
+    100%  {background:#0066FF; opacity: 1; left:232.5px; top:327.5px;}
+
+    }
+    .flip3D4:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+    -moz-transform: perspective( 600px ) rotateY( -180deg );
+    -o-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D4:hover > .back{
+	-webkit-transform: perspective( 1000px ) rotateY( 0deg );
+    -moz-transform: perspective( 1000px ) rotateY( 0deg );
+    -o-transform: perspective( 1000px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+.flip3D4:hover > .line4{
+	opacity: 0;
+
+}
