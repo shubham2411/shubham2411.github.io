@@ -8,6 +8,9 @@ var Commentaries = React.createClass({
     };
 
   },
+  tick: function(){
+      this.setState({rows: this.state.rows});
+    },
   componentDidMount: function(){
     var self = this;
 
@@ -26,6 +29,11 @@ var Commentaries = React.createClass({
        rows: this.props.rows
      });
    }
+   var interval = setInterval(
+     this.tick, 40000);
+  },
+  componentWillUnmount: function(){
+    clearInterval(this.interval);
   },
   render: function(){
     var self=this;
@@ -44,8 +52,6 @@ var Commentaries = React.createClass({
     for(i=1;i<=c;i++){
           ids.push(nextComment[i.toString()].id);
         }
-
-
         Object.keys(nextComment).sort(function(a,b){
             return nextComment[a].id < nextComment[b].id ? -1 : 1
         }).forEach(function(key){

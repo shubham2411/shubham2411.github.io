@@ -8,9 +8,9 @@ var Commentaries = React.createClass({displayName: "Commentaries",
     };
 
   },
-  tick: function(){
-      this.setState({rows: this.state.rows});
-    },
+  componentWillUnmount: function(){
+    clearInterval(this.interval);
+  },
   componentDidMount: function(){
     var self = this;
 
@@ -29,11 +29,7 @@ var Commentaries = React.createClass({displayName: "Commentaries",
        rows: this.props.rows
      });
    }
-   var interval = setInterval(
-     this.tick, 40000);
-  },
-  componentWillUnmount: function(){
-    clearInterval(this.interval);
+   this.interval = setInterval(this.tick, this.props.interval);
   },
   render: function(){
     var self=this;

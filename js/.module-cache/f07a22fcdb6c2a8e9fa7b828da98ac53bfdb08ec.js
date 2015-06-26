@@ -9,6 +9,7 @@ var Commentaries = React.createClass({displayName: "Commentaries",
 
   },
   tick: function(){
+      console.log("tick");
       this.setState({rows: this.state.rows});
     },
   componentDidMount: function(){
