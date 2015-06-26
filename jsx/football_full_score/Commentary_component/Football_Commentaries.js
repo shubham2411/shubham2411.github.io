@@ -9,7 +9,7 @@ var Commentaries = React.createClass({
 
   },
   tick: function(){
-      this.setState({rows: this.state.rows});
+      this.setState({rows: this.props.rows});
     },
   componentDidMount: function(){
     var self = this;

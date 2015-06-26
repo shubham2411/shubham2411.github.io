@@ -30,7 +30,7 @@ var Commentaries = React.createClass({displayName: "Commentaries",
      });
    }
    var interval = setInterval(
-     this.tick, 40000);
+     this.tick, 2000);
   },
   componentWillUnmount: function(){
     clearInterval(this.interval);
